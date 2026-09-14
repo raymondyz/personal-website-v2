@@ -14,6 +14,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      morsetype:
+        specifier: git+https://github.com/raymondyz/morsetype.git
+        version: git+https://github.com/raymondyz/morsetype.git#4ec9d79dc5c44080c93928a86203746d24d419aa(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       react:
         specifier: ^19.2.8
         version: 19.3.0
@@ -579,6 +582,13 @@ packages:
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
 
+  morsetype@git+https://github.com/raymondyz/morsetype.git#4ec9d79dc5c44080c93928a86203746d24d419aa:
+    resolution: {commit: 4ec9d79dc5c44080c93928a86203746d24d419aa, repo: https://github.com/raymondyz/morsetype.git, type: git}
+    version: 0.0.0
+    peerDependencies:
+      react: ^19.0.0
+      react-dom: ^19.0.0
+
   nanoid@3.3.19:
     resolution: {integrity: sha512-Y2tUNy4ouw6tq5oDSKeQYGOyhkUBhNOcGV/02KC+6kd9eDGqdZd++mjMiIDilrBYvjEnCYvVtsuHCuP+okSfug==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -1041,6 +1051,12 @@ snapshots:
   magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.6.0
+
+  morsetype@git+https://github.com/raymondyz/morsetype.git#4ec9d79dc5c44080c93928a86203746d24d419aa(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
+    dependencies:
+      clsx: 2.1.1
+      react: 19.3.0
+      react-dom: 19.3.0(react@19.3.0)
 
   nanoid@3.3.19: {}
 

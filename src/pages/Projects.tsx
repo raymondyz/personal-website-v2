@@ -1,5 +1,5 @@
-import { NavLink } from "react-router"
-import Card from "../components/Card"
+import { Link } from "react-router"
+import Card from "../components/ui/Card"
 
 import morsetype from "../assets/images/thumbnails/morsetype.png"
 
@@ -21,9 +21,9 @@ function ProjectCard({ title, description, image, color, link }: ProjectCardProp
         <p className="">{description}</p>
       </div>
       {link &&
-        <NavLink className={cn("absolute inset-0 flex items-center justify-center bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100")} to={link}>
+        <Link className={cn("absolute inset-0 flex items-center justify-center bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100")} to={link}>
           <div className="py-2 px-4 border-4 text-white/90 text-3xl">Visit</div>
-        </NavLink>
+        </Link>
       }
     </Card>
   )
@@ -34,75 +34,6 @@ export default function Projects() {
   return (
     <div className="mx-[10%] py-20 flex justify-center flex-wrap gap-8">
       <ProjectCard 
-        title="MorseType"
-        description="A typing game for practicing Morse code!"
-        image={morsetype}
-        color="bg-amber-300"
-        link="/projects/morsetype"
-      />
-      <ProjectCard 
-        title="MorseType"
-        description="A typing game for practicing Morse code!"
-        image={morsetype}
-        color="bg-blue-300"
-        link="/projects/morsetype"
-      />
-      <ProjectCard 
-        title="MorseType"
-        description="A typing game for practicing Morse code!"
-        image={morsetype}
-        color="bg-red-300"
-        link="/projects/morsetype"
-      />
-      <ProjectCard 
-        title="MorseType"
-        description="A typing game for practicing Morse code!"
-        image={morsetype}
-        color="bg-violet-300"
-        link="/projects/morsetype"
-      />
-      <ProjectCard 
-        title="MorseType"
-        description="A typing game for practicing Morse code!"
-        image={morsetype}
-        color="bg-amber-300"
-        link="/projects/morsetype"
-      />
-      <ProjectCard 
-        title="MorseType"
-        description="A typing game for practicing Morse code!"
-        image={morsetype}
-        color="bg-amber-300"
-        link="/projects/morsetype"
-      />
-      <ProjectCard 
-        title="MorseType"
-        description="A typing game for practicing Morse code!"
-        image={morsetype}
-        color="bg-blue-300"
-        link="/projects/morsetype"
-      />
-      <ProjectCard 
-        title="MorseType"
-        description="A typing game for practicing Morse code!"
-        image={morsetype}
-        color="bg-red-300"
-        link="/projects/morsetype"
-      />
-      <ProjectCard 
-        title="MorseType"
-        description="A typing game for practicing Morse code!"
-        image={morsetype}
-        color="bg-violet-300"
-        link="/projects/morsetype"
-      />
-      <ProjectCard 
-        title="MorseType"
-        description="A typing game for practicing Morse code!"
-        image={morsetype}
-        color="bg-amber-300"
-        link="/projects/morsetype"
-      />      <ProjectCard 
         title="MorseType"
         description="A typing game for practicing Morse code!"
         image={morsetype}

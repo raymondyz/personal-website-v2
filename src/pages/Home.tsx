@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-import { NavLink } from "react-router";
-import Button from "../components/Button";
-import Card from "../components/Card";
+import { Link } from "react-router";
+import { buttonStyles } from "../components/ui/Button";
+import Card from "../components/ui/Card";
 
 import headshot1 from "../assets/images/headshots/raymond-1.jpg"
 import headshot2 from "../assets/images/headshots/raymond-2.jpg"
+import { cn } from "../lib/utils";
 
 const headshots = [headshot1, headshot2]
 
@@ -29,7 +30,7 @@ export default function Home() {
             <p className="text-xl font-medium">There are more atoms of hydrogen in a single molecule of water than there are stars in the entire solar system!</p>
           </div>
         </div>
-        <NavLink className="self-center bg-yellow-200" to="/projects"><Button>Projects</Button></NavLink>
+        <Link className={cn(buttonStyles, "self-center bg-amber-200")} to="/projects">Projects</Link>
       </Card>
     </div>
   )
