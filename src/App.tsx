@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import Projects from "./pages/Projects"
 import MorseType from "morsetype"
+import ResumeRedirect from "./pages/ResumeRedirect"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route element={<ProjectLayout />}>
         <Route path="projects/morsetype" element={<MorseType />}/>
       </Route>
+      <Route path="resume" element={<ResumeRedirect />} />
     </Routes>
   )
 }

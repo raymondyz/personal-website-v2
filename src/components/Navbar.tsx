@@ -14,6 +14,7 @@ export default function Navbar() {
     <nav className="fixed w-full top-0 flex justify-center gap-6 p-4 pb-6 z-10">
       <NavbarLink to="/">Home</NavbarLink>
       <NavbarLink to="/projects">Projects</NavbarLink>
+      <NavbarLink to="/resume" target="_blank" rel="noopener noreferrer">Resume ↗</NavbarLink>
     </nav>
   )
 }
