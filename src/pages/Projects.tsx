@@ -32,7 +32,7 @@ function ProjectCard({ title, description, image, color, link }: ProjectCardProp
 
 export default function Projects() {
   return (
-    <div className="mx-[10%] py-20 flex justify-center flex-wrap gap-8">
+    <div className="mx-[10%] py-24 flex justify-center flex-wrap gap-8">
       <ProjectCard 
         title="MorseType"
         description="A typing game for practicing Morse code!"

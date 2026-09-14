@@ -7,7 +7,7 @@ const backgroundGridStyles = `bg-white bg-size-[48px_48px] bg-position-[12px_12p
 
 export default function SiteLayout() {
   return (
-    <div className="min-h-dvh flex flex-col font-bold">
+    <div className="min-h-dvh relative flex flex-col font-bold">
       <div className={cn("fixed inset-0 -z-1", backgroundGridStyles)} />
       <Navbar />
       <Outlet />
