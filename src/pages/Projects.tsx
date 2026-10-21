@@ -1,7 +1,8 @@
 import { Link } from "react-router"
 import Card from "../components/ui/Card"
 
-import morsetype from "../assets/images/thumbnails/morsetype.png"
+import morsetypeImage from "../assets/images/thumbnails/morsetype.png"
+import shufflerBuilderImage from "../assets/images/thumbnails/shufflerbuilder.png"
 
 import { cn } from "../lib/utils"
 
@@ -36,9 +37,16 @@ export default function Projects() {
       <ProjectCard 
         title="MorseType"
         description="A typing game for practicing Morse code!"
-        image={morsetype}
+        image={morsetypeImage}
         color="bg-amber-300"
         link="/projects/morsetype"
+      />
+      <ProjectCard
+        title="Shuffler Builder"
+        description="A tool to build and analyze geometries for robot shuffler drives"
+        image={shufflerBuilderImage}
+        color="bg-blue-300"
+        link="https://tools.raymondz.dev/"
       />
     </div>
   )

@@ -15,6 +15,7 @@ export default function Navbar() {
       <NavbarLink to="/">Home</NavbarLink>
       <NavbarLink to="/projects">Projects</NavbarLink>
       <NavbarLink to="/resume" target="_blank" rel="noopener noreferrer">Resume ↗</NavbarLink>
+      <NavbarLink to="https://github.com/raymondyz" target="_blank" rel="noopener noreferrer">GitHub ↗</NavbarLink>
     </nav>
   )
 }
