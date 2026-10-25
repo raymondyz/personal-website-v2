@@ -46,7 +46,7 @@ export default function Projects() {
         description="A tool to build and analyze geometries for robot shuffler drives"
         image={shufflerBuilderImage}
         color="bg-blue-300"
-        link="https://tools.raymondz.dev/"
+        link="/tools/shuffler-builder"
       />
     </div>
   )
