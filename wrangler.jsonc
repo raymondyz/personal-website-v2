@@ -1,0 +1,16 @@
+// Cloudflare Worker for raymondz.dev: serves the built site from dist/, and sends each
+// non-integrated project's path to wherever that project is hosted (worker/index.ts)
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "raymondz-dev",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // Client-side routes like /projects get index.html
+    "not_found_handling": "single-page-application",
+    // Only these paths run the Worker; everything else is served straight from dist/
+    "run_worker_first": ["/tools/*"]
+  }
+}
