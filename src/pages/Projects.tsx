@@ -11,9 +11,10 @@ interface ProjectCardProps {
   description?: string,
   image: string,
   color: string,
-  link?: string
+  link?: string,
+  external?: boolean,
 }
-function ProjectCard({ title, description, image, color, link }: ProjectCardProps) {
+function ProjectCard({ title, description, image, color, link, external }: ProjectCardProps) {
   return (
     <Card className={cn("group relative p-0 min-h-90 w-90 flex flex-col", color)} clickable>
       <img className="h-50 object-cover select-none" draggable="false" src={image} />
@@ -22,8 +23,14 @@ function ProjectCard({ title, description, image, color, link }: ProjectCardProp
         <p className="">{description}</p>
       </div>
       {link &&
-        <Link className={cn("absolute inset-0 flex items-center justify-center bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100")} to={link}>
-          <div className="py-2 px-4 border-4 text-white/90 text-3xl">Visit</div>
+        <Link
+          className={cn("absolute inset-0 flex items-center justify-center bg-black/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100")}
+          to={link}
+          target={external ? "_blank" : undefined}
+          rel={external ? "noopener noreferrer" : undefined}
+          reloadDocument={external}
+        >
+          <div className="py-2 px-4 border-4 text-white/90 text-3xl">{external ? "Visit ↗" : "Visit"}</div>
         </Link>
       }
     </Card>
@@ -47,6 +54,7 @@ export default function Projects() {
         image={shufflerBuilderImage}
         color="bg-blue-300"
         link="/tools/shuffler-builder"
+        external
       />
     </div>
   )
