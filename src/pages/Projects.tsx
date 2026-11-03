@@ -46,14 +46,22 @@ export default function Projects() {
         description="A typing game for practicing Morse code!"
         image={morsetypeImage}
         color="bg-amber-300"
-        link="/projects/morsetype"
+        link="/projects/morsetype/"
       />
       <ProjectCard
         title="Shuffler Builder"
         description="A tool to build and analyze geometries for robot shuffler drives"
         image={shufflerBuilderImage}
         color="bg-blue-300"
-        link="/tools/shuffler-builder"
+        link="/tools/shuffler-builder/"
+        external
+      />
+      <ProjectCard
+        title="Stability Analyzer"
+        description="An analysis tool to test the stability and invertibility of combat robots"
+        image={shufflerBuilderImage}
+        color="bg-green-300"
+        link="/tools/stability-analyzer/"
         external
       />
     </div>

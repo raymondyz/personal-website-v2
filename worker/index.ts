@@ -6,6 +6,7 @@ interface Env {
 // New paths must also be covered by `run_worker_first` in wrangler.jsonc.
 const projects: Record<string, string> = {
   "/tools/shuffler-builder": "https://raymondyz.github.io/shuffler-geometry-builder",
+  "/tools/stability-analyzer": "https://raymondyz.github.io/COM-stability-analyzer",
 }
 
 async function proxy(request: Request, url: URL, path: string, origin: string): Promise<Response> {
